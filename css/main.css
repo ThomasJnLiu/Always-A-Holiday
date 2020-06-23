@@ -1,7 +1,106 @@
-html{
-    background-image: url("../images/rushmore/rushmore2.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@font-face{
+    font-family: 'Cosmos Medium';
+    src: url('../fonts/cosmos_medium-webfont.woff2')
+    format('woff2'),
+        url('../fonts/cosmos_medium-webfont.woff')
+        format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face{
+    font-family: 'Cosmos Light';
+    src: url('../fonts/cosmos_light-webfont.woff')
+    format('woff2'),
+        url('../fonts/cosmos_light-webfont.woff2')
+        format('woff');
+    font-weight:normal;
+    font-style:normal;
+}
+
+.background{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+
+    min-height:100%;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    
+    opacity:80%;
+}
+
+#navLogo{
+    max-width:100%;
+    max-height:100%;
+    margin-left:2em;
+    margin-right:2em;
+}
+
+#menu{
+    height:4.5em;
+    overflow:hidden;
+    background-color:#ff4b05;
+    border-radius:2px;
+}
+
+nav{
+    display:inline-block;
+    line-height:2.25em;
+}
+
+nav a{
+    font-family: "Cosmos Medium";
+    color:black;
+    position:relative;
+    bottom:1.2em;
+    text-decoration: none;
+    font-size:1.5em;
+    padding:1em;
+}
+
+nav a:hover{
+    background-color:gray;
+}
+
+.centered{
+    position:absolute;
+    left:50%;
+    top:50%;
+    /* moves image by half of length + width, centering it on the page*/
+    transform: translate(-50%, -50%);
+}
+
+#content{
+    width:80%;
+    background-color: #fff49d;
+    margin:auto;
+    padding:2em;
+    font-family: "Cosmos";
+    margin-top: 1em;
+}
+
+#content h1{
+    font-family: "Cosmos Medium";
+    font-size: 3em;
+    text-shadow:3px 0px 0px #ff4b05;
+    margin-bottom:0;
+}
+
+
+#content p{
+    padding:1em;
+}
+
+#content hr{
+    background-color: #ff4b05;
+    height:3px;
+    border-style:none;
+}
+
+.shadow{
+    position:relative;
+    
 }
