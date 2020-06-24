@@ -4,14 +4,14 @@
             <title>ALWAYS A HOLIDAY</title>
             <meta name = "description">
             <link href = css/main.css rel = "stylesheet">
-            <script type = "text/javascript" src = "css/main.css"></script>
+            <style src = "css/main.css"></style>
 
-            <script type = "text/javascript" src = "scripts/processing.min.js"></script>
             <script type = "text/javascript" src = "scripts/jquery-3.5.1.min.js"></script>
             <script type = "text/javascript" src = "scripts/jquery-ui-1.12.1/jquery-ui.js"></script>
             <script type = "text/javascript" src = "scripts/slick/slick.js"></script>
             <link rel = "stylesheet" href = "scripts/slick/slick.css"/>
             <link rel = "stylesheet" href = "scripts/slick/slick-theme.css"/>
+            <script type = "text/javascript" src = "scripts/processing.min.js"></script>
 
             <script type = "text/javascript">
                 $(document).ready(function(){
@@ -22,10 +22,16 @@
                     });
                 });
             </script>
+
+            <style>
+                body{
+                    background-color:#2E3192;
+                }
+            </style>
         </head>
 
         <body>
-            <div class = "background">
+            <div class = "background" style = "opacity: 30%">
                 <img src = "../images/rushmore/rushmore2.jpg" class = "background"/>
             </div>
 
@@ -34,7 +40,17 @@
                 <div id = "menu">
                 </div>
             </header>
-            <img class = "centered" src = "images/TAB_logotype.png"/>
+                <div id = "tourContent">
+                    <h1>SELECT A DESTINATION</h1>
+                    
+                    <div class = "tourPic">
+                        <img src = "../images/rushmore/rushmore2.jpg" alt= "Mount Rushmore">
+                    </div>
+                   
+                    <div class = "tourPic" style = "width:20%">
+                        <img src = "../images/rushmore/rushmore3.jpg" alt= "Mount Rushmore">
+                    </div>
+                </div>
         </body>
 
     </html>

@@ -59,10 +59,11 @@ nav a{
     text-decoration: none;
     font-size:1.5em;
     padding:1em;
+    transition: background-color 0.3s;
 }
 
 nav a:hover{
-    background-color:gray;
+    background-color:#db4409;
 }
 
 .centered{
@@ -87,11 +88,15 @@ nav a:hover{
     font-size: 3em;
     text-shadow:3px 0px 0px #ff4b05;
     margin-bottom:0;
+    margin-top:0;
 }
 
 
 #content p{
     padding:1em;
+    font-size:1.1em;
+    text-indent: 1em;
+    margin:0;
 }
 
 #content hr{
@@ -103,4 +108,44 @@ nav a:hover{
 .shadow{
     position:relative;
     
+}
+
+#content .noIndent{
+    text-indent:0;
+}
+
+textarea{
+    width:100%;
+    height:200px;
+}
+
+#tourContent h1{
+    position:relative;
+    top:1em;
+    text-align:center;
+    font-family: "Cosmos Medium";
+    color: #fff49d;
+    font-size: 3em;
+    text-shadow:4px 0px 0px #ff4b05;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.tourPic{
+    display:inline-block;
+    position:relative;
+    top:10em;
+    width:40%;
+    margin-left:10em;
+}
+
+.tourPic img{
+    min-height:100%;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+}
+
+.tourPic img:hover{
+    opacity:80%;
 }
